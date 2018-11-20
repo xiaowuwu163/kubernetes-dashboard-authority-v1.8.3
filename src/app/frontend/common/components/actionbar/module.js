@@ -36,7 +36,8 @@ export default angular
           resourceModule.name,
         ])
     .component('kdActionbar', actionbarComponent)
-    .component('kdBreadcrumbs', breadcrumbsComponent)
+    .component(
+      'kdBreadcrumbs', breadcrumbsComponent)
     .component('kdActionbarLogs', actionbarLogsComponent)
     .component('kdActionbarNamespaceOverview', actionbarNamespaceOverviewComponent)
     .component('kdActionbarDeleteItem', actionbarDeleteItemComponent)
