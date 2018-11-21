@@ -19,7 +19,7 @@ limitations under the License.
             layout="column">
   <div class="kd-nav-group">
     <kd-nav-item class="kd-nav-group-item"
-                 state="{{::$ctrl.states.cluster}}">[[云平台|yunpingtai group menu entry.]]{{::$ctrl.states}}</kd-nav-item>
+                 state="{{::$ctrl.states.cluster}}">[[云平台|yunpingtai group menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.namespace}}">[[企业名称|Namespaces menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
@@ -28,6 +28,7 @@ limitations under the License.
                  state="{{::$ctrl.states.persistentVolume}}">[[持久化存储|Persistent Volumes menu entry.]]</kd-nav-item>
     <!-- Enabled dynamically if the rbac is enabled in the cluster. -->
     <kd-role-nav states="$ctrl.states"></kd-role-nav>
+    <kd-nav-item state="$ctrl.states.cluster">test</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.storageClass}}">[[存储类|Storage Classes menu entry.]]</kd-nav-item>
   </div>
