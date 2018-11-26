@@ -28,7 +28,6 @@ limitations under the License.
                  state="{{::$ctrl.states.persistentVolume}}">[[持久化存储|Persistent Volumes menu entry.]]</kd-nav-item>
     <!-- Enabled dynamically if the rbac is enabled in the cluster. -->
     <kd-role-nav states="$ctrl.states"></kd-role-nav>
-    <kd-nav-item state="$ctrl.states.cluster">test</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.storageClass}}">[[存储类|Storage Classes menu entry.]]</kd-nav-item>
   </div>
@@ -41,12 +40,14 @@ limitations under the License.
   <div class="kd-nav-group">
     <kd-nav-item class="kd-nav-group-item"
                  state="{{::$ctrl.states.workload}}">[[工作负载|Workloads group menu entry.]]</kd-nav-item>
-    <kd-nav-item class="kd-nav-item"
+    <!-- <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.cronJob}}">[[定时任务|Cron Jobs menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.daemonSet}}">[[Daemon Sets应用|Daemon Sets menu entry.]]</kd-nav-item>
+                 -->
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.deployment}}">[[Deployments应用|Deployments menu entry.]]</kd-nav-item>
+    <!--
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.job}}">[[任务|Jobs menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
@@ -57,6 +58,7 @@ limitations under the License.
                  state="{{::$ctrl.states.replicationController}}">[[Replication Controllers应用|Replication Controllers menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.statefulSet}}">[[Stateful Sets应用|Stateful Sets menu entry.]]</kd-nav-item>
+                 -->
   </div>
   <div class="kd-nav-group">
     <kd-nav-item class="kd-nav-group-item"
