@@ -18,7 +18,7 @@
  * @externs
  */
 
-const kdUiRouter = {};
+const kdUiRouter = {}
 
 /**
  * @constructor
